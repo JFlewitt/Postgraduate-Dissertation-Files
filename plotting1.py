@@ -39,24 +39,3 @@ print('data loaded - topography')
 plotting_function(dataset=control_dataset, x='lat', y='pfull', variable='omega', experiment='control', average=True,
        streamfunction=True, season='summer',
        cbar_min=-0.004, cbar_max=0.004)
-
-# M storm MY31
-plotting_function(dataset=reanalysis_dataset, x='lat', y='pfull', variable='o1', experiment='reanalysis', average=False, 
-       choose_lat=37.65, choose_lon=17.45, choose_pressure=4.45, choose_ls=248.4, choose_sol=21,
-       reanalysis_type=reanalysis_type, reanalysis_year=reanalysis_year, reanalysis_ls=reanalysis_ls,
-       topography=True, streamfunction=False, significance=False,
-       cbar_min=None, cbar_max=None, r_time_av=False, not_bg=not_bg)
-
-# T storm MY26
-plotting_function(dataset=reanalysis_dataset, x='lat', y='pfull', variable='omega', experiment='reanalysis', average=False, 
-       choose_lat=5.4, choose_lon=129.65, choose_pressure=6, choose_ls=242.24, choose_sol=16,
-       reanalysis_type=reanalysis_type, reanalysis_year=reanalysis_year, reanalysis_ls=reanalysis_ls,
-       topography=True, streamfunction=True,
-       cbar_min=-0.004, cbar_max=0.004, r_time_av=False, not_bg=not_bg)
-
-# C storm MY31 (regional)
-plotting_function(dataset=reanalysis_dataset, x='lat', y='pfull', variable='hrad', experiment='reanalysis', average=False, 
-       choose_lat=19, choose_lon=320, choose_pressure=6, choose_ls=247.8, choose_sol=21,
-       reanalysis_type=reanalysis_type, reanalysis_year=reanalysis_year, reanalysis_ls=reanalysis_ls,
-       topography=True, streamfunction=False,
-       cbar_min=-0.0006, cbar_max=0.0006, r_time_av=False, not_bg=not_bg)
